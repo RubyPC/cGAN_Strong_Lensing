@@ -28,6 +28,7 @@ The data fed to the cGAN is loaded from each individual waveband file.
 ## Results after Training
 The cGAN predicts the strong gravitational lenses as observed by the long wavelength filters of JWST NIRcam to a high accuracy. We also test whether the cGAN can predict long wavelength JWST NIRcam data from Euclid-VIS and Euclid-NISP data. Below shows examples of results produced by the network.
 <img width="441" alt="Output1" src="https://github.com/RubyPC/cGAN_Strong_Lensing/assets/106536925/987a46a9-b18d-478c-81b1-6e322da04c74">
+Predicting long wavelength JWST NIRcam data given Euclid-VIS or Euclid-NISP data or a mixture of both would be a beneficial application of the cGAN. The pixel resolutions between the two Euclid instruments and JWST NIRcam are different, so we must expect a different output from JWST short wavelength to long wavelength. It could be the case that predicting strong gravitational lenses as observed by JWST given the observation by Euclid is a method of anomaly detection- observations made by Euclid that are potential gravitational lenses could be proved as non-lenses as observed by JWST. Although this does not solve the problem of finding strong gravitational lenses, it is useful for improving the purity and recall of our strong lens finding methods.
 
 Further results showing each individual filter prediction and Euclid to JWST predictions are given in the cGAN jupyter notebook.
 
