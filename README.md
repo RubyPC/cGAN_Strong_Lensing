@@ -3,16 +3,18 @@
 [![DOI](https://zenodo.org/badge/690453944.svg)](https://zenodo.org/badge/latestdoi/690453944)
 
 Supporting materials for Euclid strong lensing working group meeting Bologna February 2024.
-This repository contains notebooks and additional files for getting filter response curves for JWST NIRcam imaging, simulating strong gravitational lenses for JWST and Euclid observation configuration and the source code for the cGAN. Each notebook gives a walkthrough and detailed explanation of how to use the code provided. 
+
+This repository contains notebooks and additional files for getting filter response curves for JWST NIRcam imaging, simulating strong gravitational lenses for JWST and Euclid observation configurations and the source code for the cGAN. Each notebook gives a walkthrough and detailed explanation of how to use the code provided. 
 
 ## Data Preparation for the cGAN
-The strong gravitational lenses dataset was simulated using lenstronomy: [here](https://lenstronomy.readthedocs.io/en/latest/). Note that only NIRcam F200W and F356W are supported by lenstronomy in the observation configuration file for JWST. To simulate strong gravitational lenses as observed by JWST NIRcam, you will have to use:
+The strong gravitational lenses dataset was simulated using [lenstronomy](https://lenstronomy.readthedocs.io/en/latest/). Note that only NIRcam F200W and F356W filters are supported by lenstronomy in the observation configuration file for JWST. To simulate strong gravitational lenses as observed by JWST NIRcam imaging, you will have to use:
 
 > JWST_Config.py
 
 To simulate the strong gravitational lenses as observed by both JWST NIRcam and Euclid-VIS, Euclid-NISP, you can follow:
 
-This returns the simulated lenses with a *.fits* extension of size 64x64. More information is given in the notebook.
+This notebook closely follows that of [LensFindery-McLensFinderFace](https://github.com/JoshWilde/LensFindery-McLensFinderFace/tree/main).
+This returns the simulated lenses for all 6 JWST NIRcam filters, Euclid-VIS and Euclid NISP-JYH filters with a *.fits* extension of size 64x64. More information is given in the notebook.
 
 ## The Network
 <img width="560" alt="image" src="https://github.com/RubyPC/Anomaly_Detection_with_cGANs/assets/106536925/cf6becbd-7dd4-4ae7-87d6-39ab19fa8e7a">
