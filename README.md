@@ -13,6 +13,8 @@ The strong gravitational lenses dataset was simulated using [lenstronomy](https:
 
 To simulate the strong gravitational lenses as observed by both JWST NIRcam and Euclid-VIS, Euclid-NISP, you can follow:
 
+> Lens_Dataset.ipynb
+
 This notebook closely follows that of [LensFindery-McLensFinderFace](https://github.com/JoshWilde/LensFindery-McLensFinderFace/tree/main).
 This returns the simulated lenses for all 6 JWST NIRcam filters, Euclid-VIS and Euclid NISP-JYH filters with a *.fits* extension of size 64x64. More information is given in the notebook.
 
