@@ -16,7 +16,7 @@ To simulate the strong gravitational lenses as observed by both JWST NIRcam and 
 > Lens_Dataset.ipynb
 
 This notebook closely follows that of [LensFindery-McLensFinderFace](https://github.com/JoshWilde/LensFindery-McLensFinderFace/tree/main).
-This returns the simulated lenses for all 6 JWST NIRcam filters, Euclid-VIS and Euclid NISP-JYH filters with a *.fits* extension of size 64x64. More information is given in the notebook.
+This returns the simulated lenses for all 6 JWST NIRcam filters, Euclid-VIS and Euclid NISP-JYH filters with a *.fits* extension of size 640x640 for JWST and 64x64 for Euclid. When then upscale Euclid to the pixel resolution of JWST. This is done due to the difference in pixel scales of the two telescopes. More information is given in the notebook.
 
 ## The Network
 <img width="560" alt="image" src="https://github.com/RubyPC/Anomaly_Detection_with_cGANs/assets/106536925/cf6becbd-7dd4-4ae7-87d6-39ab19fa8e7a">
